@@ -8,7 +8,7 @@ export function Header() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2 text-sm">
           <div className="flex items-center gap-3">
             <span className="font-semibold">{company.name}</span>
-            <span className="hidden opacity-80 md:inline">{company.tagline}</span>
+            <span className="font-semibold"> Licensed &amp; Insured </span>
           </div>
 
           <div className="flex items-center gap-3">

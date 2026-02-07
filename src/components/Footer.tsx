@@ -17,10 +17,6 @@ export function Footer() {
               {company.tagline}
             </div>
 
-            <div className="mt-4 text-sm font-semibold text-white/85">
-              Licensed &amp; Insured
-            </div>
-
             <div className="mt-6">
               <div className="text-sm font-extrabold tracking-tight">
                 License
@@ -93,23 +89,23 @@ export function Footer() {
               {company.emergencyNote}
             </div>
 
-            {/* Phone directly under emergency */}
+            {/* Phone directly under emergency
             <a
               href={`tel:${company.phoneHref}`}
               className="mt-3 block text-lg font-extrabold tracking-tight hover:underline"
             >
               {company.phoneDisplay}
-            </a>
+            </a> */}
 
-            {/* Single calm CTA */}
+            {/* Single calm CTA 
             <div className="mt-5">
               <Link href="/contact" className="btn-ghost">
                 Get in touch
               </Link>
-            </div>
-          </div>
-        </div>
+            </div>*/}
 
+          </div>
+        </div> 
         <div className="mt-10 border-t border-white/10 pt-6 text-xs text-white/50">
           © {new Date().getFullYear()} {company.name}. All rights reserved.
         </div>

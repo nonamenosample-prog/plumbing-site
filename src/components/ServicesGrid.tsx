@@ -7,7 +7,7 @@ export function ServicesGrid() {
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="flex items-end justify-between gap-6">
           <div>
-            <h2 className="text-2xl font-extrabold tracking-tight md:text-3xl">
+            <h2 className="text-2xl font-extrabold tracking-tight text-slate-900 md:text-3xl">
               How can we help you?
             </h2>
             <p className="mt-2 max-w-2xl text-sm text-slate-600 md:text-base">
@@ -21,18 +21,23 @@ export function ServicesGrid() {
             <Link
               key={s.slug}
               href={`/services/${s.slug}`}
-              className="group rounded-3xl border bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+              className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
             >
               <div className="flex items-start justify-between gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-50 text-2xl">
+                {/* Icon chip */}
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-50 text-2xl ring-1 ring-slate-200 transition group-hover:ring-brand-orange/30">
                   {s.icon}
                 </div>
-                <div className="text-sm font-bold text-sky-700 opacity-0 transition group-hover:opacity-100">
+
+                {/* View hint */}
+                <div className="text-sm font-bold text-brand-orange opacity-0 transition group-hover:opacity-100">
                   View →
                 </div>
               </div>
 
-              <div className="mt-4 text-lg font-extrabold">{s.title}</div>
+              <div className="mt-4 text-lg font-extrabold tracking-tight text-slate-900">
+                {s.title}
+              </div>
               <div className="mt-2 text-sm text-slate-600">{s.description}</div>
             </Link>
           ))}

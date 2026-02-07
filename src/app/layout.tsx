@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Caccia Plumbing — Service Company Website",
+  title: "Rare Plumbing — White Glove Plumbing Service",
   description: "Plumbing, drain & sewer, electrical, water heaters, and more.",
 };
 
