@@ -22,4 +22,7 @@ export const company = {
     "Sun Valley",
     "And surrounding areas",
   ],
+
+  // ✅ добавь это обратно
+  addressLines: ["Panorama City, CA", "United States"],
 };
