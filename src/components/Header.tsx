@@ -1,24 +1,26 @@
 import Link from "next/link";
+import { company } from "@/data/company";
 export function Header() {
   return (
     <header className="border-b">
       {/* Top bar */}
-      <div className="bg-slate-900 text-white">
+      <div className="bg-brand-navy text-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2 text-sm">
           <div className="flex items-center gap-3">
-            <span className="font-semibold">Rare Plumbing</span>
-            <span className="hidden opacity-80 md:inline">Serving Your Area</span>
+            <span className="font-semibold">{company.name}</span>
+            <span className="hidden opacity-80 md:inline">{company.tagline}</span>
           </div>
 
           <div className="flex items-center gap-3">
             <a className="opacity-90 hover:opacity-100" href="tel:+11234567890">
-             +1 (747) 306-1917
+             {company.phoneDisplay}
             </a>
             <a
-              className="rounded-md bg-white/10 px-3 py-1 font-semibold hover:bg-white/20"
+              className="btn-ghost"
+
               href="#schedule"
             >
-              Schedule Online
+              Get in touch
             </a>
           </div>
         </div>
@@ -50,14 +52,6 @@ export function Header() {
         </Link>
       </nav>
 
-          <div className="flex items-center gap-3">
-            <a
-              className="rounded-xl bg-sky-600 px-4 py-2 text-sm font-bold text-white hover:bg-sky-700"
-              href="tel:+1747306-1917"
-            >
-              Call Now
-            </a>
-          </div>
         </div>
       </div>
     </header>

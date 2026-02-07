@@ -10,6 +10,20 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* existing */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* fonts */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* BRAND COLORS */
+  --color-brand-navy: #113146;
+  --color-brand-ink: #0b1b2a;
+  --color-brand-orange: #ff8a1f;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +37,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex h-11 items-center justify-center rounded-2xl px-5 text-sm font-extrabold transition bg-brand-orange text-white hover:brightness-95 disabled:opacity-60;
+  }
+
+  .btn-ghost {
+    @apply inline-flex h-11 items-center justify-center rounded-2xl px-5 text-sm font-extrabold transition bg-white/10 text-white hover:bg-white/15 disabled:opacity-60;
+  }
+
+  .btn-navy {
+    @apply inline-flex h-11 items-center justify-center rounded-2xl px-5 text-sm font-extrabold transition bg-brand-navy text-white hover:brightness-110 disabled:opacity-60;
+  }
 }

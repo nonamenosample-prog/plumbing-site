@@ -48,10 +48,11 @@ export default async function ServicePage({ params }: Props) {
                 </a>
                 <Link
                   className="inline-flex items-center justify-center rounded-2xl bg-white/10 px-6 py-3 text-sm font-bold text-white hover:bg-white/15"
-                  href="/contact"
+                  href={`/contact?service=${slug}`}
                 >
                   Schedule appointment
                 </Link>
+
               </div>
 
               {/* Mobile image */}
@@ -140,7 +141,7 @@ export default async function ServicePage({ params }: Props) {
                 </a>
                 <Link
                   className="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-5 py-3 text-sm font-extrabold text-white hover:bg-black"
-                  href="/contact"
+                  href={`/contact?service=${slug}`}
                 >
                   Request appointment
                 </Link>

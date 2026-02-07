@@ -2,7 +2,7 @@ export function CTA() {
   return (
     <section className="bg-slate-50">
       <div className="mx-auto max-w-6xl px-4 py-12">
-        <div id="schedule" className="rounded-3xl bg-slate-950 p-8 text-white md:p-10">
+        <div id="schedule" className="bg-gradient-to-r from-brand-ink to-brand-navy text-white">
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div>
               <h2 className="text-2xl font-extrabold tracking-tight md:text-3xl">
@@ -15,13 +15,13 @@ export function CTA() {
 
             <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
               <a
-                className="inline-flex items-center justify-center rounded-2xl bg-sky-500 px-6 py-3 text-sm font-extrabold text-white hover:bg-sky-400"
+                className="btn-primary"
                 href="/contact"
               >
                 Schedule appointment
               </a>
               <a
-                className="inline-flex items-center justify-center rounded-2xl bg-white/10 px-6 py-3 text-sm font-bold text-white hover:bg-white/15"
+                className="btn-ghost"
                 href="tel:+17473061917"
               >
                 Or call +1 (747) 306-1917
